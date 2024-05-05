@@ -1,0 +1,45 @@
+<div class="container-header padding-container-component">
+    <div class="personal-information">
+        <div class="container-profile-image">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="profile-photo">
+        </div>
+        
+        <div class="container-personal-information">
+            <h1>Camilo Andres Hernadez Rincon</h1>
+            <h2>Programador</h2>
+
+            <label class="font-weight-normal">
+                <i class="fa-solid fa-location-dot icon-location"></i>
+                ubicacion
+            </label>
+            <div class="p-1-y container-buttons-info">
+                <!-- <p class="primary-button p-1">email</p> -->
+                <app-primary-button
+                    [icon]="'fa-regular fa-envelope'"
+                    label="camiloandrehrincon@gmail.com"
+                    [primaryBotton]="true"
+                ></app-primary-button>
+                <app-primary-button
+                    [icon]="'fa-solid fa-file'"
+                    [primaryBotton]="false"
+                ></app-primary-button>
+                <app-primary-button
+                    [icon]="'fa-brands fa-github'"
+                    [primaryBotton]="false"
+                ></app-primary-button>
+                <app-primary-button
+                    [icon]="'fa-brands fa-linkedin'"
+                    [primaryBotton]="false"
+                ></app-primary-button>
+            </div>
+        </div>
+    </div>
+    <div class="about-me">
+        <h2>Sobre mi</h2>
+        <p class="font-weight-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid assumenda aspernatur in nihil ullam
+            blanditiis earum facilis? Laboriosam quibusdam non dolor. Voluptate repudiandae consectetur repellat in,
+            sequi recusandae ratione architecto.</p>
+    </div>
+
+</div>

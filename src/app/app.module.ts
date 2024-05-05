@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HomeComponent } from './modules/home/home.component';
+import { HeaderComponent } from './modules/header/header.component';
+import { SharedModule } from './shared/shared/shared.module';
 
 
 // Configure the translation loader
@@ -14,12 +17,15 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 }
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    SharedModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

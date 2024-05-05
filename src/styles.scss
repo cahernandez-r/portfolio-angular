@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+:root {
+    --grass-9: #46a758;
+    --grass-9-contrast: #ffffff00;
+    --grass-a1: #00de1205;
+    --grass-a6: #71ff8f4b;
+    --grass-a4: #57ff802c;
+    --grass-a11: #89ff9fcd;
+}
+
+* {
+    background-color: #1b1919dc;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+}
+
+.padding-container-component {
+    padding: 2rem 5rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-1-y {
+    padding: 1rem 0rem;
+}
+
+
+.p-0-4 {
+    padding: 0.4rem;
+    border: none;
+}
+
+.primary-button {
+    background-color: var(--grass-9);
+    border-radius: 15px;
+}
+
+.secondary-button {
+    background-color: var(--grass-a4);
+    border-radius: 15px;
+    border: 2px solid var(--grass-9);
+    width: 3rem;
+}
+
+.secondary-button i {
+    color: var(--grass-a11);
+}
+
+i {
+    background-color: var(--grass-9-contrast);
+}
+
+.font-weight-normal {
+    font-weight: 100;
+}
