@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PrimaryButtonComponent } from '../components/primary-button/primary-button.component';
+import { AnchorComponent } from '../components/primary-anchor/anchor.component';
 
 
 
 @NgModule({
   declarations: [
-    PrimaryButtonComponent
+    AnchorComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    PrimaryButtonComponent
+    AnchorComponent
   ]
 })
 export class SharedModule { }

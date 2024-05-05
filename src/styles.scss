@@ -20,7 +20,7 @@
 }
 
 .padding-container-component {
-    padding: 2rem 5rem;
+    padding: 2rem 3rem;
 }
 
 .p-1 {
@@ -37,19 +37,23 @@
     border: none;
 }
 
-.primary-button {
+.primary-anchor {
     background-color: var(--grass-9);
     border-radius: 15px;
+    text-decoration: none;
+
 }
 
-.secondary-button {
+.secondary-anchor {
     background-color: var(--grass-a4);
-    border-radius: 15px;
+    border-radius: 13px;
     border: 2px solid var(--grass-9);
-    width: 3rem;
+    text-decoration: none;
+
+    //width: 10rem;
 }
 
-.secondary-button i {
+.secondary-anchor i {
     color: var(--grass-a11);
 }
 
