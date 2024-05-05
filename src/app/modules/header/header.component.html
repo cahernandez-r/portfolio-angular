@@ -14,24 +14,14 @@
                 ubicacion
             </label>
             <div class="p-1-y container-buttons-info">
-                <app-anchor
-                    [icon]="'fa-regular fa-envelope'"
-                    label="camiloandrehrincon@gmail.com"
-                    [primaryAnchor]="true"
-                    [url]="'https://google.com'"
-                ></app-anchor>
-                <app-anchor
-                    [icon]="'fa-solid fa-file'"
-                    [primaryAnchor]="false"
-                ></app-anchor>
-                <app-anchor
-                    [icon]="'fa-brands fa-github'"
-                    [primaryAnchor]="false"
-                ></app-anchor>
-                <app-anchor
-                    [icon]="'fa-brands fa-linkedin'"
-                    [primaryAnchor]="false"
-                ></app-anchor>
+                <div *ngFor="let item of anchorItems">
+                    <app-anchor
+                        [icon]="item.icon ?? ''"
+                        [value]="item.value ?? ''"
+                        [primaryAnchor]="item.primaryAnchor ?? false"
+                        [url]="item.url ?? ''"
+                    ></app-anchor>
+                </div>
             </div>
         </div>
     </div>

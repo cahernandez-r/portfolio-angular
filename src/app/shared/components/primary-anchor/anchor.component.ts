@@ -10,7 +10,7 @@ export class AnchorComponent {
   @Input() 
   icon: string = "";
   @Input()
-  label: string = "";
+  value: string = "";
   @Input()
   primaryAnchor: boolean = true;
   @Input()
