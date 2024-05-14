@@ -1,0 +1,18 @@
+<div class="padding-container-component">
+    <div class="flex gap-1 wrap" >
+        <div *ngFor="let item of itemsHabilities">
+            <button>
+                <i class="fa-regular fa-envelope"></i>
+                {{item}}
+            </button>
+        </div>
+    </div>
+    <div class="m-1-y">
+        <app-project
+            [title]="'Project java'"
+            [description]="'este es un proyecto meloo'"
+        >
+
+        </app-project>
+    </div>
+</div>

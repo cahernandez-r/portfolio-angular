@@ -1,5 +1,6 @@
 {
     "label": {
-        "name": "Nombre"
+        "name": "Nombre",
+        "habilities": "Habilidades"
     }
 }

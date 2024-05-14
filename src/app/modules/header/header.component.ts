@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AnchorCustomModel } from 'src/app/shared/shared/models/anchor-custom-model';
+import { AnchorCustomModel } from 'src/app/shared/models/anchor-custom-model';
 
 @Component({
   selector: 'app-header',
