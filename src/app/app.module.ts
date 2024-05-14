@@ -10,7 +10,7 @@ import { HomeComponent } from './modules/home/home.component';
 import { HeaderComponent } from './modules/header/header.component';
 import { SharedModule } from './shared/shared.module';
 import { HabilitiesComponent } from './modules/habilities/habilities.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Configure the translation loader
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -34,7 +34,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    BrowserAnimationsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

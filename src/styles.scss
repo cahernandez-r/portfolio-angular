@@ -109,6 +109,8 @@ i {
     border-radius: var(--border-radius-default);
 }
 
+//Styles buttons
+
 button {
     border: none;
     background-color: var(--grass-9);
@@ -117,5 +119,8 @@ button {
     background-color: var(--grass-a4);
     border: 2px solid var(--grass-9);
     cursor: pointer;
-    //color: var(--grass-a11);
+}
+
+.selected {
+    background-color: var(--grass-9);
 }

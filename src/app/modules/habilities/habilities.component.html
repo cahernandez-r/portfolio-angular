@@ -1,18 +1,25 @@
 <div class="padding-container-component">
     <div class="flex gap-1 wrap" >
         <div *ngFor="let item of itemsHabilities">
-            <button>
-                <i class="fa-regular fa-envelope"></i>
-                {{item}}
+            <button 
+                [class.selected]="item.code === habilitySelected"
+                (click)="onSelectecHability(item.code ?? '')"
+            >
+                <i [class]="item.icon"></i>
+                {{item.hability}}
             </button>
         </div>
     </div>
-    <div class="m-1-y">
-        <app-project
-            [title]="'Project java'"
-            [description]="'este es un proyecto meloo'"
-        >
-
-        </app-project>
+    <div class="m-1-y" *ngIf="projectsRender && projectsRender.length">
+        <div class="flex gap-1 wrap">
+            <app-project
+                [@slideInLeft]="'base'"
+                *ngFor="let project of projectsRender"
+                [title]="project.title ?? ''"
+                [description]="project.description ?? ''"
+            >
+    
+            </app-project>
+        </div>
     </div>
 </div>
